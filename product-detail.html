@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm | LUXE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .product-detail-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding-top: var(--spacing-xl);
+            margin-bottom: var(--spacing-lg);
+        }
+        .detail-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--shadow-strong);
+        }
+        .detail-info h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .detail-price {
+            font-size: 2rem;
+            color: var(--accent-color);
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        .detail-desc {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+        .detail-actions {
+            display: flex;
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header glass" style="background: rgba(255,255,255,0.9);">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html"><h1>LUXE</h1></a>
+            </div>
+            <nav class="nav-bar">
+                <a href="index.html" style="font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">&larr; Quay lại trang chủ</a>
+            </nav>
+            <div class="header-actions">
+                <div class="cart-icon">
+                    <a href="#" id="cart-toggle">
+                        🛒 <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="product-detail-container" id="product-detail">
+            <!-- Content will be loaded by JS -->
+            <p>Đang tải thông tin sản phẩm...</p>
+        </div>
+    </main>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = parseInt(urlParams.get('id'));
+            
+            const product = products.find(p => p.id === productId);
+            const container = document.getElementById('product-detail');
+            
+            if (product) {
+                document.title = `${product.name} | LUXE`;
+                container.innerHTML = `
+                    <div class="detail-image">
+                        <img src="${product.image}" alt="${product.name}">
+                    </div>
+                    <div class="detail-info">
+                        <p style="color: var(--accent-color); font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">${product.category} / ${product.subCategory}</p>
+                        <h2>${product.name}</h2>
+                        <p class="detail-price">${formatCurrency(product.price)}</p>
+                        <p class="detail-desc">${product.description}</p>
+                        <div class="detail-actions">
+                            <button class="btn btn-primary" onclick="addToCart(${product.id})">Thêm Vào Giỏ Hàng</button>
+                            <button class="btn btn-outline" onclick="addToCart(${product.id}); showToast('🛒 Đơn hàng của bạn đang được xử lý!')">Mua Ngay</button>
+                        </div>
+                    </div>
+                `;
+            } else {
+                container.innerHTML = `<p>Sản phẩm không tồn tại. <a href="index.html">Quay lại trang chủ</a></p>`;
+            }
+        });
+    </script>
+</body>
+</html>

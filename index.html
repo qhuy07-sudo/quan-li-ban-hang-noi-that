@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE FURNITURE | Nội Thất Đẳng Cấp</title>
+    <meta name="description" content="Trang web quản lý bán hàng nội thất cao cấp. Cung cấp các sản phẩm nội thất sang trọng cho ngôi nhà của bạn.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon (Optional) -->
+    <link rel="icon" href="assets/images/favicon.ico">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header glass">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html"><h1>LUXE</h1></a>
+            </div>
+
+            <!-- 3-Level Menu Bar -->
+            <nav class="nav-bar">
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="#">Phòng Khách</a>
+                        <!-- Level 2 -->
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="#">Sofa & Ghế</a>
+                                <!-- Level 3 -->
+                                <ul class="submenu-list">
+                                    <li><a href="#">Sofa Da Thật</a></li>
+                                    <li><a href="#">Sofa Vải Nỉ</a></li>
+                                    <li><a href="#">Ghế Armchair</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#">Bàn Trà & Kệ</a>
+                                <ul class="submenu-list">
+                                    <li><a href="#">Bàn Trà Gỗ</a></li>
+                                    <li><a href="#">Bàn Trà Mặt Đá</a></li>
+                                    <li><a href="#">Kệ Tivi</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Phòng Ngủ</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="#">Giường Ngủ</a>
+                                <ul class="submenu-list">
+                                    <li><a href="#">Giường King Size</a></li>
+                                    <li><a href="#">Giường Hiện Đại</a></li>
+                                    <li><a href="#">Giường Gỗ Tự Nhiên</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#">Tủ & Bàn Trang Điểm</a>
+                                <ul class="submenu-list">
+                                    <li><a href="#">Tủ Quần Áo</a></li>
+                                    <li><a href="#">Bàn Trang Điểm</a></li>
+                                    <li><a href="#">Tủ Đầu Giường</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#">Phòng Ăn</a></li>
+                    <li class="nav-item"><a href="#">Trang Trí</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm sản phẩm..." id="search-input">
+                    <button id="search-btn"><i class="fas fa-search"></i>🔍</button>
+                </div>
+                <div class="cart-icon">
+                    <a href="#" id="cart-toggle">
+                        🛒 <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Landing Page Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h2 class="animate-up">Nâng Tầm Không Gian Sống</h2>
+                    <p class="animate-up" style="animation-delay: 0.1s;">Khám phá bộ sưu tập nội thất mới nhất với thiết kế hiện đại và tinh tế.</p>
+                    <div class="hero-btns animate-up" style="animation-delay: 0.2s;">
+                        <a href="#" class="btn btn-primary">Mua Ngay</a>
+                        <a href="#" class="btn btn-outline">Xem Bộ Sưu Tập</a>
+                    </div>
+                </div>
+                <!-- Hero image will be added here -->
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sản Phẩm Nổi Bật</h2>
+                    <p>Những mẫu thiết kế được yêu thích nhất trong tháng này</p>
+                </div>
+                <div class="product-grid" id="product-list">
+                    <!-- Products will be dynamically loaded here by products.js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>LUXE</h3>
+                    <p>Kiến tạo không gian, nâng tầm cuộc sống.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liên Kết</h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LUXE FURNITURE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
