@@ -32,19 +32,19 @@ const productImages = {
 };
 
 const customProductImages = {
-    // Real product photos from Unsplash Source API (keyword-based, free license)
-    mirrorAura: "https://source.unsplash.com/800x800/?decorative,wall,mirror,gold,round&sig=101",
-    mirrorWallGlow: "https://source.unsplash.com/800x800/?mirror,wall,backlit,led,interior&sig=102",
-    vaseSerenity: "https://source.unsplash.com/800x800/?vase,flowers,minimalist,white,decor&sig=103",
-    ceramicVase: "https://source.unsplash.com/800x800/?ceramic,vase,pottery,home,decor&sig=104",
-    ringLight: "https://source.unsplash.com/800x800/?ceiling,lamp,ring,light,chandelier&sig=105",
-    tableLampAurora: "https://source.unsplash.com/800x800/?table,lamp,bedside,light,interior&sig=106",
-    abstractArt: "https://source.unsplash.com/800x800/?abstract,painting,canvas,wall,art&sig=107",
-    wallClock: "https://source.unsplash.com/800x800/?wall,clock,round,decor,home&sig=108",
-    barCabinet: "https://source.unsplash.com/800x800/?bar,cabinet,wine,rack,furniture&sig=109",
-    servingCart: "https://source.unsplash.com/800x800/?bar,cart,serving,gold,wheels&sig=110",
-    upholsteredChair: "https://source.unsplash.com/800x800/?dining,chair,upholstered,beige,fabric&sig=111",
-    woodenChair: "https://source.unsplash.com/800x800/?scandinavian,wooden,chair,dining,oak&sig=112"
+    // Real product photos
+    mirrorAura: "assets/images/generated/mirror-aura.png",
+    mirrorWallGlow: "assets/images/generated/mirror-wall-glow.png",
+    vaseSerenity: "assets/images/generated/vase-serenity.png",
+    ceramicVase: "assets/images/generated/ceramic-vase.png",
+    ringLight: "assets/images/generated/ring-light.png",
+    tableLampAurora: "assets/images/generated/table-lamp-aurora.png",
+    abstractArt: "assets/images/generated/abstract-art.jpg",
+    wallClock: "assets/images/generated/wall-clock.jpg",
+    barCabinet: "assets/images/generated/bar-cabinet.jpg",
+    servingCart: "assets/images/generated/serving-cart.jpg",
+    upholsteredChair: "assets/images/generated/upholstered-chair.jpg",
+    woodenChair: "assets/images/generated/wooden-chair.jpg"
 };
 
 const products = [
@@ -63,7 +63,7 @@ const products = [
         category: "Phòng Khách",
         subCategory: "Bàn Trà & Kệ",
         price: 8500000,
-        image: productImages.livingRoom[5],
+        image: "assets/images/coffee-table.jpg",
         description: "Mặt bàn đá marble kết hợp chân kim loại mạ vàng tinh tế."
     },
     {
@@ -162,7 +162,7 @@ const products = [
         category: "Phòng Khách",
         subCategory: "Bàn Trà & Kệ",
         price: 14900000,
-        image: productImages.livingRoom[7],
+        image: "assets/images/internet/tv-stand.jpg",
         description: "Kệ tivi dài với bề mặt veneer tinh tế, giúp phòng khách trông gọn và sang hơn."
     },
     {
@@ -198,7 +198,7 @@ const products = [
         category: "Phòng Khách",
         subCategory: "Sofa & Ghế",
         price: 7400000,
-        image: productImages.livingRoom[1],
+        image: "assets/images/internet/accent-chair.jpg",
         description: "Mẫu ghế nhấn thanh lịch, phù hợp cho góc đọc sách hoặc tiếp khách nhẹ nhàng."
     },
     {
@@ -207,7 +207,7 @@ const products = [
         category: "Phòng Khách",
         subCategory: "Bàn Trà & Kệ",
         price: 11300000,
-        image: productImages.livingRoom[5],
+        image: "assets/images/internet/coffee-table-round.jpg",
         description: "Mặt đá sáng màu kết hợp chân kim loại tối giản cho vẻ ngoài tinh tế."
     },
     {
@@ -216,7 +216,7 @@ const products = [
         category: "Phòng Khách",
         subCategory: "Bàn Trà & Kệ",
         price: 15600000,
-        image: productImages.livingRoom[7],
+        image: "assets/images/internet/tv-stand-neo.jpg",
         description: "Thiết kế thấp, gọn và sắc nét, tối ưu khu vực giải trí của gia đình."
     },
     {
@@ -234,7 +234,7 @@ const products = [
         category: "Phòng Ngủ",
         subCategory: "Giường Ngủ",
         price: 33200000,
-        image: productImages.bedroom[0],
+        image: "assets/images/internet/bed-zen-wood.jpg",
         description: "Kết cấu gỗ chắc chắn, bề mặt hoàn thiện mịn mang lại cảm giác ấm áp."
     },
     {
@@ -252,7 +252,7 @@ const products = [
         category: "Phòng Ngủ",
         subCategory: "Tủ & Bàn Trang Điểm",
         price: 24800000,
-        image: productImages.bedroom[5],
+        image: "assets/images/internet/wardrobe-sliding.jpg",
         description: "Cửa lùa tiết kiệm diện tích, phù hợp cho phòng ngủ nhỏ và căn hộ hiện đại."
     },
     {
@@ -261,7 +261,7 @@ const products = [
         category: "Phòng Ngủ",
         subCategory: "Tủ & Bàn Trang Điểm",
         price: 12800000,
-        image: productImages.bedroom[4],
+        image: "assets/images/internet/vanity-luna.jpg",
         description: "Mặt bàn sáng, gương lớn và ngăn kéo tiện lợi cho góc chăm sóc cá nhân."
     },
     {
@@ -270,7 +270,7 @@ const products = [
         category: "Phòng Ngủ",
         subCategory: "Tủ & Bàn Trang Điểm",
         price: 5200000,
-        image: productImages.bedroom[3],
+        image: "assets/images/internet/nightstand-cedar.jpg",
         description: "Kích thước nhỏ gọn, đủ để đặt đèn ngủ, sách và các vật dụng cần thiết."
     },
     {
@@ -342,7 +342,7 @@ const products = [
         category: "Phòng Ăn",
         subCategory: "Bàn Ăn",
         price: 28900000,
-        image: productImages.dining[0],
+        image: "assets/images/internet/dining-calacatta.jpg",
         description: "Mặt đá vân sáng nổi bật, mang lại cảm giác cao cấp cho khu vực ăn uống."
     },
     {
@@ -351,7 +351,7 @@ const products = [
         category: "Phòng Ăn",
         subCategory: "Bàn Ăn",
         price: 17600000,
-        image: productImages.dining[3],
+        image: "assets/images/internet/dining-compact.jpg",
         description: "Bộ bàn ăn nhỏ gọn, rất hợp với căn hộ hoặc những góc bếp ấm cúng."
     },
     {
