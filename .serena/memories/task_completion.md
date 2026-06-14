@@ -1,0 +1,4 @@
+- Consider the task complete after a local smoke test of both pages succeeds: landing page loads, product cards render, nav/search/cart interactions work, and product detail links open with the right `id`.
+- Verify there are no console errors in the browser when filtering, searching, opening the cart drawer, adding/removing items, and loading an invalid product id.
+- If the task touches styling, confirm the layout on both desktop and a narrow mobile viewport.
+- Use `serena memories check` from the project root if you need to validate memory references later.

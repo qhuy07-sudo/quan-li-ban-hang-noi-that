@@ -1,0 +1,5 @@
+- Keep to vanilla browser JS patterns: modules/files expose globals consumed by inline handlers and other scripts.
+- Use `DOMContentLoaded` for startup wiring and guard DOM queries where a page may omit elements.
+- Preserve the shared `products` array as the canonical product source unless the task explicitly introduces a new data layer.
+- Prefer incremental DOM updates and small focused files over introducing a framework for this codebase.
+- Keep style changes in `css/style.css`; page-specific markup stays in the corresponding HTML file.

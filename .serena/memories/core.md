@@ -1,0 +1,6 @@
+- Static furniture storefront built with plain HTML/CSS/vanilla JS.
+- Entry pages: `index.html` (catalog/landing) and `product-detail.html` (detail view by `?id=` query param).
+- Shared behavior is split across `js/products.js`, `js/navigation.js`, `js/search.js`, `js/cart.js`.
+- Main UI assets live in `css/style.css` and `assets/images/*`; product cards and cart both depend on the same `products` array.
+- Navigation/search/cart logic is DOM-driven and global-function based; there is no client router or build pipeline.
+- Public behavior to preserve: product grid rendering, category filtering, search, cart drawer, and detail-page deep links.

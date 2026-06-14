@@ -1,0 +1,4 @@
+- Start a simple local server from the repo root: `python3 -m http.server 8000`.
+- Open the site in a browser at `http://localhost:8000/`.
+- Useful repo inspection commands on this project: `find . -maxdepth 2 -type f | sort`, `git status --short`, `git log --oneline -n 8`.
+- There is no package-manager workflow to run here because no `package.json` was found in the repo root.

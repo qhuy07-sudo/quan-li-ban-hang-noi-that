@@ -3,40 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUXE FURNITURE | Nội Thất Đẳng Cấp</title>
-    <meta name="description" content="Trang web quản lý bán hàng nội thất cao cấp. Cung cấp các sản phẩm nội thất sang trọng cho ngôi nhà của bạn.">
-    
-    <!-- Google Fonts -->
+    <title>Phòng Ngủ | LUXE</title>
+    <meta name="description" content="Bộ sưu tập nội thất phòng ngủ sang trọng từ LUXE.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Favicon (Optional) -->
     <link rel="icon" href="assets/images/favicon.ico">
 </head>
-<body data-page="home">
-
-    <!-- Header & Navigation -->
+<body data-page="category" data-category="Phòng Ngủ" data-page-title="Phòng Ngủ" data-page-description="Bộ sưu tập giường ngủ, tủ áo và bàn trang điểm cho không gian nghỉ ngơi tinh tế.">
     <header class="main-header glass">
         <div class="container header-content">
-            <div class="logo">
-                <a href="index.html"><h1>LUXE</h1></a>
-            </div>
-
+            <div class="logo"><a href="index.html"><h1>LUXE</h1></a></div>
             <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
-
-            <!-- 3-Level Menu Bar -->
             <nav class="nav-bar">
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
                         <a href="phong-khach.html">Phòng Khách</a>
-                        <!-- Level 2 -->
                         <ul class="dropdown-menu">
                             <li class="dropdown-submenu">
                                 <a href="phong-khach.html?sub=Sofa%20%26%20Gh%E1%BA%BF">Sofa & Ghế</a>
-                                <!-- Level 3 -->
                                 <ul class="submenu-list">
                                     <li><a href="phong-khach.html?sub=Sofa%20%26%20Gh%E1%BA%BF&amp;item=Sofa%20Da%20Th%E1%BA%ADt">Sofa Da Thật</a></li>
                                     <li><a href="phong-khach.html?sub=Sofa%20%26%20Gh%E1%BA%BF&amp;item=Sofa%20V%E1%BA%A3i%20N%E1%BB%89">Sofa Vải Nỉ</a></li>
@@ -98,47 +83,32 @@
                     </li>
                 </ul>
             </nav>
-
             <div class="header-actions">
                 <div class="search-box">
                     <input type="text" placeholder="Tìm sản phẩm..." id="search-input">
                     <button id="search-btn"><i class="fas fa-search"></i>🔍</button>
                 </div>
-                <div class="cart-icon">
-                    <a href="#" id="cart-toggle">
-                        🛒 <span class="cart-count">0</span>
-                    </a>
-                </div>
+                <div class="cart-icon"><a href="#" id="cart-toggle">🛒 <span class="cart-count">0</span></a></div>
             </div>
         </div>
     </header>
 
-    <main>
-        <!-- Landing Page Hero Section -->
-        <section class="hero">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h2 class="animate-up">Nâng Tầm Không Gian Sống</h2>
-                    <p class="animate-up" style="animation-delay: 0.1s;">Khám phá bộ sưu tập nội thất mới nhất với thiết kế hiện đại và tinh tế.</p>
-                    <div class="hero-btns animate-up" style="animation-delay: 0.2s;">
-                        <a href="#product-list" class="btn btn-primary">Mua Ngay</a>
-                        <a href="phong-khach.html" class="btn btn-outline">Xem Bộ Sưu Tập</a>
-                    </div>
-                </div>
-                <!-- Hero image will be added here -->
+    <main class="page-main">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-breadcrumb" id="category-breadcrumb">Trang chủ / Phòng Ngủ</div>
+                <div class="page-eyebrow">Bộ sưu tập</div>
+                <h2 id="category-title">Phòng Ngủ</h2>
+                <p id="category-description">Bộ sưu tập giường ngủ, tủ áo và bàn trang điểm cho không gian nghỉ ngơi tinh tế.</p>
             </div>
         </section>
-
-        <!-- Featured Products -->
         <section class="featured-products section-padding">
             <div class="container">
                 <div class="section-header">
-                    <h2>Sản Phẩm Nổi Bật</h2>
-                    <p>Những mẫu thiết kế được yêu thích nhất trong tháng này</p>
+                    <h2>Sản Phẩm Trong Danh Mục</h2>
+                    <p>Chọn một nhóm sản phẩm hoặc dùng tìm kiếm để thu hẹp kết quả.</p>
                 </div>
-                <div class="product-grid" id="product-list">
-                    <!-- Products will be dynamically loaded here by products.js -->
-                </div>
+                <div class="product-grid" id="product-list"></div>
             </div>
         </section>
     </main>
@@ -149,9 +119,6 @@
                 <div class="footer-info">
                     <h3>LUXE</h3>
                     <p>Kiến tạo không gian, nâng tầm cuộc sống.</p>
-                    <p><strong>Địa chỉ:</strong> 68 Nguyễn Chí Thanh, Láng Thượng, Đống Đa, Hà Nội</p>
-                    <p><strong>Điện thoại:</strong> 038 226 2993</p>
-                    <p><strong>Email:</strong> qhuy07@gmail.com</p>
                 </div>
                 <div class="footer-links">
                     <h4>Liên Kết</h4>
@@ -163,16 +130,14 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 LUXE FURNITURE. All rights reserved.</p>
-            </div>
+            <div class="footer-bottom"><p>&copy; 2026 LUXE FURNITURE. All rights reserved.</p></div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="js/products.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/search.js"></script>
     <script src="js/cart.js"></script>
+    <script src="js/category-page.js"></script>
 </body>
 </html>

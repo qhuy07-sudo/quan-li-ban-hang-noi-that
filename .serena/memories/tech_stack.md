@@ -1,0 +1,5 @@
+- Language: TypeScript is listed by Serena for the workspace, but the app code currently in use is vanilla JavaScript.
+- Frontend stack: HTML5, CSS3, browser JS, no framework/router/build tool detected in the repo root.
+- Fonts are loaded from Google Fonts (`Outfit` in CSS, `index.html` also preconnects Google Fonts).
+- External deps are runtime browser-only; no package manifest is present in the repo root.
+- The code assumes modern browser features such as `DOMContentLoaded`, `URLSearchParams`, `localStorage`, `Intl.NumberFormat`, and `requestAnimationFrame`.
